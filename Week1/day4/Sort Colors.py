@@ -18,4 +18,4 @@ class Solution:
 if __name__ == "__main__":
     colors = [2, 1, 1, 0, 0, 2]
     Solution().sortColors(colors)
-    print A
+    print(A)
