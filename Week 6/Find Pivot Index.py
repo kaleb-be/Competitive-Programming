@@ -1,12 +1,9 @@
-class Solution:
-    def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
-        car = [0]*1001
-        for trip in trips:
-            car[trip[1]] += trip[0];
-            car[trip[2]] -= trip[0];
-            
-        for stop in car:
-            capacity -= stop
-            if capacity < 0:
-                return False;
-        return True
+class Solution(object):
+    def pivotIndex(self, nums):
+        S = sum(nums)
+        leftsum = 0
+        for i, x in enumerate(nums):
+            if leftsum == (S - leftsum - x):
+                return i
+            leftsum += x
+        return -1
