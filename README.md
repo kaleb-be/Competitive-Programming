@@ -1,3 +1,2 @@
 # Competitive-Programming
-Programming problem solutions
-  in fulfillment of the A2SV community path admission requirements 
+Programming problem solutions (from leetcode, Codeforces, and HackerRank)
